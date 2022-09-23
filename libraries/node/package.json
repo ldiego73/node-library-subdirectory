@@ -9,6 +9,11 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
   "scripts": {
     "build": "tsup src/index.ts -d lib --dts --minify"
   },
