@@ -2,11 +2,14 @@ name: Release
 on:
   push:
     branches:
-      - master
+      - main
 jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./libraries/node
     steps:
       - name: Checkout
         uses: actions/checkout@v2
