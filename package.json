@@ -1,0 +1,26 @@
+{
+  "private": true,
+  "scripts": {
+    "commit": "cz",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "./**/*.{ts,js,json,md}": [
+      "prettier --write"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "@commitlint/cz-commitlint": "^17.1.2",
+    "commitizen": "^4.2.5",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1"
+  }
+}
