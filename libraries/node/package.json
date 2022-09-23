@@ -10,9 +10,7 @@
     "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
-    "build": "tsup src/index.ts -d lib --dts --minify",
-    "prerelease": "npm run build",
-    "release": "changeset publish"
+    "build": "tsup src/index.ts -d lib --dts --minify"
   },
   "devDependencies": {
     "@changesets/cli": "^2.24.4",
